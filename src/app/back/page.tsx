@@ -9,7 +9,7 @@ type Song = {
 }
 
 export default async function Back() {
-    const baseUrl = 'http://localhost:3000'
+    const baseUrl = process.env.BASE_URL
     const response = await fetch(`${baseUrl}/api`, {cache:'no-store'})
     const songs: Song[] = await response.json()
     return (
