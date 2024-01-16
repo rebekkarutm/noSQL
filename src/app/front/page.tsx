@@ -17,12 +17,10 @@ export default function Add() {
     // creating input fields for each component, with their value set, and a submit button
     return (
         <>
-        <div>
             <input placeholder='Song title' value={title} onChange={(e) => setTitle(e.target.value)}/>
             <input placeholder='Artist' value={artist} onChange={(e) => setArtist(e.target.value)}/>
             <input placeholder='Song length' value={length} onChange={(e) => setLength(e.target.value)}/>
             <button onClick={saveSong}>Submit my song</button>
-        </div>
         </>
     )
 }
