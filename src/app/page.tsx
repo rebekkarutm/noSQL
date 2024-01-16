@@ -9,6 +9,7 @@ export default function Both() {
       <h1>Hi, please enjoy my song database!</h1>
       <br/>
       <button style={{width:'160px', height: '40px', borderRadius:'8px', cursor:'grab'}}><Link href='/back'>Click here to try it out</Link></button>
+      <h4 style={{paddingTop:'20px'}}>Please be patient after you've clicked the button, you'll see the page eventually!</h4>
     </div>
   )
 }

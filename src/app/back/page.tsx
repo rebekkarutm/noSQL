@@ -17,6 +17,8 @@ export default async function Back() {
     const songs: Song[] = await response.json()
     return (
         <div style={{padding:'20px'}}>
+            <h2>Psst.. Once you've altered information, you need to hit refresh to see changes in the page</h2>
+            <br/>
             <Add></Add>
             {songs.map(songObj =>
             <EditSong songObj={songObj} key={songObj._id.toString()}></EditSong>
