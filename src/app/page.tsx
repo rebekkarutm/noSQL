@@ -1,17 +1,12 @@
 'use client'
-import Change from "./components/editSong"
-import Add from "./front/page"
+import Link from "next/link"
+import Back from "./back/page"
 
 export default function Both() {
   return (
     <>
-      <Add></Add>
-      <Change songObj={{
-        _id: "",
-        title: "",
-        artist: "",
-        length: ""
-      }}></Change>
+    <h1>Hi, please enjoy my song database!</h1>
+    <Link href='/back'>Click here to try it out</Link>
     </>
   )
 }
