@@ -9,15 +9,20 @@ type Song = {
 }
 
 export default async function Back() {
-    const baseUrl = process.env.BASE_URL
-    const response = await fetch(`${baseUrl}/api`, {cache:'no-store'})
-    const songs: Song[] = await response.json()
+    /*const baseUrl = process.env.BASE_URL
+const response = await fetch(`${baseUrl}/api`, {cache:'no-store'})
+   const songs: Song[] = await response.json()
     return (
         <div>
             <Add></Add>
             {songs.map(songObj =>
             <EditSong songObj={songObj} key={songObj._id.toString()}></EditSong>
             )}
+        </div>
+    )*/
+    return(
+        <div>
+            Testing
         </div>
     )
 }
